@@ -5,6 +5,7 @@
   "scripts": {
     "start": "electron .",
     "package-mac": "electron-packager . LeChat --platform=darwin --arch=x64 --out=dist/",
+    "package-mac-universal": "electron-builder --mac --universal",
     "package-win": "electron-packager . LeChat --platform=win32 --arch=x64 --out=dist/",
     "package-linux": "electron-packager . LeChat --platform=linux --arch=x64 --out=dist/"
   },
@@ -14,6 +15,7 @@
   "description": "",
   "devDependencies": {
     "electron": "^34.3.0",
+    "electron-builder": "^25.1.8",
     "electron-packager": "^17.1.2"
   }
 }
