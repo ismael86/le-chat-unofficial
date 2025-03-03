@@ -22,7 +22,7 @@ app.whenReady().then(() => {
   createWindow();
 
   // Create the tray icon
-  tray = new Tray(path.join(__dirname, 'logo.png'));
+  tray = new Tray(path.join(__dirname, 'logo_tray.png'));
   tray.setToolTip('Le Chat');
 
   // Create a context menu for the tray icon

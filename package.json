@@ -1,13 +1,12 @@
 {
   "name": "lechat",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "package-mac": "electron-packager . LeChat --platform=darwin --arch=x64 --out=dist/",
     "package-mac-universal": "electron-builder --mac --universal",
-    "package-win": "electron-packager . LeChat --platform=win32 --arch=x64 --out=dist/",
-    "package-linux": "electron-packager . LeChat --platform=linux --arch=x64 --out=dist/"
+    "package-win": "electron-builder --win",
+    "package-linux": "electron-builder --linux"
   },
   "keywords": [],
   "author": "",
