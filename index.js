@@ -1,8 +1,11 @@
 const { app, BrowserWindow, Tray, Menu } = require('electron');
 const path = require('path');
 
+
+let mainWindow; // Declare mainWindow in the outer scope
+
 function createWindow () {
-  const mainWindow = new BrowserWindow({
+  mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
     //frame: false,
