@@ -11,6 +11,9 @@ Make sure you have node.js installed
 
 #### Package the app depending on your platform
 `npm run package-mac`
+
 `npm run package-win`
+
 `npm run package-linux`
+
 You'll find the binaries in the dist subfolder
